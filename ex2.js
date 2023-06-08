@@ -26,7 +26,7 @@ class Pokemon {
 }
 
 let bulbasaur = new Pokemon(1, "Bulbasaur", ['Grass', 'Poison'], 45, 49, 49)
-let squirtle = new Pokemon(1, "Squirtle", ['Water'], 44, 48, 65)
+let squirtle = new Pokemon(7, "Squirtle", ['Water'], 44, 48, 65)
 
 // bulbasaur.atacar(squirtle)
 
