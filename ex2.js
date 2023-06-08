@@ -1,6 +1,6 @@
 // Implementa un método de la clase pokemon, de nombre 'atacar'. El método toma por parámetro otro objeto de la clase Pokemon.
 
-// El Pokemon que ejecuta el método realiza un ataque 
+// El Pokemon que ejecuta el método realiza un ataque
 // pokemonA.atacar(PokemonB)
 
 /**
@@ -15,19 +15,23 @@
  */
 
 class Pokemon {
-    constructor(id, nombre, tipos, vida, ataque, defensa){
-        this.id = id
-        this.nombre = nombre
-        this.tipos = tipos
-        this.vida = vida
-        this.ataque = ataque
-        this.defensa = defensa
-    }
+  constructor(id, nombre, tipos, vida, ataque, defensa) {
+    this.id = id;
+    this.nombre = nombre;
+    this.tipos = tipos;
+    this.vida = vida;
+    this.ataque = ataque;
+    this.defensa = defensa;
+  }
+
+  atacar(pokemon) {
+    console.log("Yo soy " + this.nombre);
+    console.log("Ataco al pokemon " + pokemon.nombre);
+  }
 }
 
-let bulbasaur = new Pokemon(1, "Bulbasaur", ['Grass', 'Poison'], 45, 49, 49)
-let squirtle = new Pokemon(7, "Squirtle", ['Water'], 44, 48, 65)
+let bulbasaur = new Pokemon(1, "Bulbasaur", ["Grass", "Poison"], 45, 49, 49);
+let squirtle = new Pokemon(7, "Squirtle", ["Water"], 44, 48, 65);
+let pikachu = new Pokemon(25, "Pikachu", ["Electric"], 44, 48, 65);
 
-// bulbasaur.atacar(squirtle)
-
-
+bulbasaur.atacar(pikachu);
